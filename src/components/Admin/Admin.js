@@ -7,7 +7,7 @@ const Admin = ({ event }) => {
 
     const deleteEvent = (id) => {
         console.log(id)
-        fetch(`http://localhost:5055/delete/${id}`, {
+        fetch(`https://tranquil-journey-74991.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

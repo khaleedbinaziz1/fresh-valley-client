@@ -50,9 +50,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <PrivateRoute path="/addProducts">
+          <Route path="/addProducts">
             <AddProducts />
-          </PrivateRoute>
+          </Route>
           <Route path="/dashboard">
             <Dashboard />
           </Route>

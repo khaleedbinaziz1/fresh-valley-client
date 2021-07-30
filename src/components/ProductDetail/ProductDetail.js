@@ -10,7 +10,7 @@ const ProductDetail = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5055/event/'+productId)
+        fetch('https://tranquil-journey-74991.herokuapp.com/event/'+productId)
         .then(res => res.json())
         .then(data => setProduct(data));
     }, [productId])    
