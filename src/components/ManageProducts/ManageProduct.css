@@ -7,3 +7,10 @@
     text-decoration: none;
     
 }
+.deleteBtn{
+    border: none;
+    width: 30px;
+}
+.btnBorder{
+    border: none;
+}

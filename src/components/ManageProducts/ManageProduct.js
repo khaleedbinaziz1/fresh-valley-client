@@ -10,7 +10,7 @@ const ManageProduct = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5055/events')
+        fetch('https://tranquil-journey-74991.herokuapp.com/events')
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])
@@ -22,9 +22,9 @@ const ManageProduct = () => {
                     <Col sm={3}>
                         <div className="left-section" >
 
-                            <img src={plus} alt="" />    <Link className="n-link" to="/addProducts">Add Products</Link>
+                            <Link className="n-link" to="/addProducts"> <img src={plus} alt="" /> Add Products</Link>
                             <br />
-                            <img src={grid} alt="" />    <Link className="n-link" to="/manageProducts">Manage products</Link>
+                            <Link className="n-link" to="/manageProducts"> <img src={grid} alt="" /> Manage products</Link>
                         </div>
                     </Col>
                     <Col sm={9}>{

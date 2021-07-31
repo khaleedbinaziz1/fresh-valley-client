@@ -18,7 +18,7 @@ const AddProducts = () => {
             weight: data.weight,
             price: data.price
         };
-        const url = `http://localhost:5055/addEvent`
+        const url = `https://tranquil-journey-74991.herokuapp.com/addEvent`
 
         fetch(url, {
             method: 'POST',
@@ -54,9 +54,9 @@ const AddProducts = () => {
                     <Col sm={3}>
                         <div className="left-section text-danger" >
 
-                            <img src={plus} alt="" />     <Link className="n-link" to="/addProducts">Add Products</Link>
+                            <Link className="n-link" to="/addProducts"><img src={plus} alt="" /> Add Products</Link>
                             <br />
-                            <img src={grid} alt="" />       <Link className="n-link" to="/manageProducts">Manage products</Link>
+                            <Link className="n-link" to="/manageProducts">  <img src={grid} alt="" /> Manage products</Link>
                         </div>
                     </Col>
                     <Col sm={9}>

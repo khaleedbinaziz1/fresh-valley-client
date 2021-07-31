@@ -19,7 +19,7 @@ const Event = ({ event }) => {
                         <Card.Text>
                             {event.price} tk.
                         </Card.Text>
-                        <Link to="/productDetails:id">
+                        <Link to="/productDetails">
                             <Button onClick variant="contained" style={buyBtn}>Buy</Button>
                         </Link>
                     </Card.Body>

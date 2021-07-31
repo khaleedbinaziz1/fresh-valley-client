@@ -18,7 +18,7 @@ const Admin = ({ event }) => {
 
     return (
         <div className>
-            <p>{event.name} <button onClick={() => deleteEvent(`${event._id}`)}><img src={deleteIcon} alt="" /></button> </p>
+            <p>{event.name} <button className="btnBorder" onClick={() => deleteEvent(`${event._id}`)}><img className="deleteBtn" src={deleteIcon} alt="" /></button> </p>
         </div>
     );
 };
