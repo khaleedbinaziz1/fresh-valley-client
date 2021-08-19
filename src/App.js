@@ -15,8 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import NoMatch from './components/NoMatch/NoMatch';
-import logo from '../src/icons/logo.png'
 import ProductDetail from './components/ProductDetail/ProductDetail';
+import Example from './components/Example/Example';
 
 
 
@@ -27,25 +27,8 @@ function App() {
 
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
+      <Example />
       <Router>
-        <Container className="header">
-          <div className="logo">
-            <Link to="/"><img src={logo} alt="" /></Link>
-          </div>
-          <div className="navigation">
-            <ul>
-              <li>
-                <Link className="link" to="/">Home</Link>
-              </li>
-              <li>
-                <Link className="link" to="/addProducts">Admin</Link>
-              </li>
-              <li>
-                <Link className="link" to="/login">Login</Link>
-              </li>
-            </ul>
-          </div>
-        </Container>
         <Switch>
           <Route exact path="/">
             <Home />
